@@ -1,0 +1,16 @@
+@import 'style.scss';
+
+.degradado {
+    background: linear-gradient(0deg, rgba(245,0,2,1) 0%, rgba(245,0,2,1) 50%, rgba(245,0,2,0) 50%, rgba(245,0,2,0) 100%);
+}
+
+:host ::ng-deep {
+    .accordeon-catalogo p span,
+    .accordeon-catalogo p a {
+        color:#f50002;
+    }
+
+    .accordeon-catalogo p a:hover {
+        text-decoration: underline;
+    }
+}

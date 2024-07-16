@@ -1,0 +1,89 @@
+<section>
+    <div class="container m-auto px-6 md:px-0 py-6 md:py-0">
+        <div class="flex justify-between flex-col md:flex-row items-center mb-7">
+            <div class="w-full ">
+                <h2 class="font-mp-bold text-center md:text-left text-3xl md:text-5xl">Checkout - Finalizar Redención <img src="" alt=""></h2>
+            </div>
+            <div class="w-full py-10 flex flex-col md:flex-row justify-end items-end">
+                <h4 class="font-mp-bold text-2xl md:border-r-2 border-black md:pr-5 text-center md:text-left">Mi saldo actual <strong class="text-5xl">15.871</strong> puntos</h4>
+                <p class="w-full md:w-auto font-mp-light text-2xl text-center md:text-left md:pl-5 ">MIEMBRO DE PRIVILEGIOS JMTRV</p>
+            </div>
+        </div>
+        <div class="text-center  mb-7">
+            <h3 class="font-mp-condensed text-red text-5xl border-b-2 border-red inline">Resumen de la redención</h3>
+        </div>
+        @if (isMovile) {
+            <div class="">
+                <div class="p-3 bg-gray-primary mb-4">
+                    <img class="w-1/2 m-auto h-auto" src="assets/images/banner-mis-puntos.png" alt="">
+                    <p class="font-mp-regular text-base mb-3">Recorriendo España: acércate a la cultura de España desde sus sabores icónicos, en compañía del Chef podrás preparar un menú tradicional con Pulpo a la Gallega, Tortilla Española, Paella y el toque dulce de la Crema Catalana.</p>
+                    <div class="flex justify-between border-t border-white py-4">
+                        <p>Cantidad redimida:</p>
+                        <p class="font-mp-bold">2</p>
+                    </div>
+                    <div class="flex justify-between border-t border-white py-3">
+                        <p>Puntos:</p>
+                        <p class="font-mp-bold">1.003.586</p>
+                    </div>
+                    <div class="flex justify-between border-t border-white py-3">
+                        <p>Total:</p>
+                        <p class="font-mp-bold">2.000.000</p>
+                    </div>
+                </div>
+            </div>
+        } @else {
+            <table class=" mb-7">
+                <tr>
+                    <th class="w-1/4 p-3 font-mp-light text-3xl text-gray-secondary border-r border-gray-primary font-light">Producto</th>
+                    <th class="w-1/4 p-3 font-mp-light text-3xl text-gray-secondary border-r border-gray-primary font-light">Cantidad redimida</th>
+                    <th class="w-1/4 p-3 font-mp-light text-3xl text-gray-secondary border-r border-gray-primary font-light">Puntos</th>
+                    <th class="w-1/4 p-3 font-mp-light text-3xl text-gray-secondary border-r border-gray-primary font-light">Total</th>
+                </tr>
+                <tr>
+                    <td class="w-1/4 p-3 bg-gray-primary border-r border-white">
+                        <div class="flex gap-2">
+                            <img class="w-1/2 h-auto" src="assets/images/banner-mis-puntos.png" alt="">
+                            <p class="font-mp-regular text-xs">Recorriendo España: acércate a la cultura de España desde sus sabores icónicos, en compañía del Chef podrás preparar un menú tradicional con Pulpo a la Gallega, Tortilla Española, Paella y el toque dulce de la Crema Catalana.</p>
+                        </div>
+                    </td>
+                    <td class="w-1/4 p-3 bg-gray-primary border-r border-white">
+                        <p class="text-center text-5xl font-mp-bold">2</p>
+                    </td>
+                    <td class="w-1/4 p-3 bg-gray-primary border-r border-white">
+                        <p class="font-mp-bold text-2xl text-center "><strong class="text-5xl">3.586</strong> Puntos</p>
+                    </td>
+                    <td class="w-1/4 p-3 bg-gray-primary border-r border-white">
+                        <p class="font-mp-bold text-2xl text-center "><strong class="text-5xl">7.172</strong> Puntos</p>
+                    </td>
+                </tr>
+            </table>
+        }
+        
+        <div class="border-b-2 border-red mt-2 w-full mb-7"></div>
+        <div class="flex flex-wrap md:flex-nowrap items-start mb-7">
+            <div class="w-full md:w-1/2">
+                <p class="font-mp-light text-3xl md:text-4xl">Cantidad total de bonos: 2</p>
+            </div>
+            <div class="w-1/2 md:w-1/4 text-left md:text-center">
+                <p class="font-mp-light text-3xl md:text-4xl mb-5">Subtotal</p>
+                <p class="font-mp-light text-3xl md:text-4xl text-red">Total:</p>
+            </div>
+            <div class="w-1/2 md:w-1/4 text-right">
+                <p class="font-mp-light text-3xl md:text-4xl mb-5">7.172 Puntos</p>
+                <p class="font-mp-light text-3xl md:text-4xl text-red">7.172 Puntos</p>
+            </div>
+        </div>
+        <div class="flex items-end mb-10">
+            <div class="w-1/2 text-left">
+                <div class="text-left">
+                    <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform">Cancelar</button>
+                </div>
+            </div>
+            <div class="w-1/2 text-right">
+                <div class="text-right">
+                    <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform">REDIMIR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

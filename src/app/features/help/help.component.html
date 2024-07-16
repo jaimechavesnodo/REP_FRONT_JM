@@ -1,0 +1,41 @@
+<section class="banner relative">
+    <div class="banner-img flex justify-end">
+        <img class="w-full md:w-3/5" src="assets/images/banner-ayuda.png" alt="">
+    </div>
+    <div class="container relative md:absolutemd:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  px-6 md:px-0">
+        <div class="banner-info w-full md:w-2/5 pr-12">
+            <p class="font-mp-prosemibold text-6xl text-gray-secondary mb-3">AYUDA <br>PLAN DE PRIVILEGIOS <br>JMTRV</p>
+            <p class="font-mp-condensed text-4xl text-red border-b-2 border-red">Consultas frecuentes</p>
+        </div>
+    </div>
+    <img class="hidden md:block absolute bottom-0 left-0 w-40" src="assets/images/triangulo-banner.png" alt="">
+</section>
+<section class="videos text-center py-14">
+    <div class="container m-auto">
+        <h1 class="font-mp-bold-condensed text-6xl border-b-2 border-red inline-block pb-2 mb-10">Lorem imput</h1>
+        <div class="flex  flex-col md:flex-row justify-between gap-12  px-6 md:px-0">
+            <div class="videos-item">
+                <video controls class="mb-4" src="assets/videos/dummy.mp4"></video>
+                <p class="font-mp-regular text-4xl text-red">Lorem imput</p>
+            </div>
+            <div class="videos-item">
+                <video controls class="mb-4" src="assets/videos/dummy.mp4"></video>
+                <p class="font-mp-regular text-4xl text-red">Lorem imput</p>
+            </div>
+            <div class="videos-item">
+                <video controls class="mb-4" src="assets/videos/dummy.mp4"></video>
+                <p class="font-mp-regular text-4xl text-red">Lorem imput</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-14 px-6 md:px-0">
+    <div class="container m-auto">
+        @for (item of list; track $index) {
+            <div class="acordeon-item" [class]="item.active ? 'activo' : ''">
+                <h4 (click)="activeItem($index)" class="flex font-mp-regular text-2xl md:text-3xl cursor-pointer mb-5"><img class="w-11 h-11 mr-4" [src]="item.active ? 'assets/images/menos.png' : 'assets/images/mas.png'" >{{item.title}}</h4>
+                <p [class]="item.active ? 'block' : 'hidden'" class="font-mp-light text-xl md:text-2xl mb-7" [innerHTML]= "item.text"></p>
+            </div>
+        }
+    </div>
+</section>

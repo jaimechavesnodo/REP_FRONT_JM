@@ -1,0 +1,105 @@
+<header class="bg-black w-full relative before:absolute before:top-0 before:right-0 before:h-full before:bg-red before:w-2/12 md:before:w-4/12">
+    <div class="container mx-auto flex items-center justify-center">
+        <div class="w-5/12 sm:w-3/12 relative">
+            <a routerLink="/">
+                <img class="py-1 w-60 sm:max-h-28" src="assets/images/Logo-JMTRV.png" alt="JMTRV">
+            </a>
+        </div>
+        @if (viewImgMenu) {
+            <img class="absolute right-5 top-5 w-6 h-6" src="assets/images/menu.png" alt="" (click)="viewmenu()">
+        }
+        @if (showMenu) {
+            <div class="w-full md:w-9/12 flex flex-col md:flex-row items-center top-full md:top-auto absolute md:relative bg-black z-10 ">
+                <div class="w-full md:w-7/12 relative">
+                    <nav>
+                        <ul class="flex flex-col md:flex-row justify-end items-center">
+                            @for (item of mainMenu; track $index) {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" [routerLink]="item.link" [target]="item.target">{{item.text}}</a></li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w-full md:w-5/12 bg-red h-32 relative">
+                    <nav class="h-full flex justify-start items-center">
+                        <ul class="flex flex-col md:flex-row justify-start items-center h-full w-full">
+                            @for (item of authMenu; track $index) {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" [routerLink]="item.link" [target]="item.target">{{item.text}}</a></li>
+                            }
+                            <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" (click)="showModal()">Ingresa a tu cuenta</p></li>
+                        </ul>
+                        <!-- <img width="60" src="assets/icons/search.png" alt="search"> -->
+                    </nav>
+                </div>
+            </div>
+        }
+    </div>
+</header>
+
+@if (viewModal) {
+    <section class="jm-modal">
+        <div class="jm-fondo-modal"></div>
+        <div class="jm-cont-modal w-11/12 max-w-md">
+            <div class="jm-triangulo-top"></div>
+            <div class="jm-triangulo-bottom"></div>
+            <div>
+                <img class="absolute top-5 right-5 w-5 cursor-pointer" src="assets/images/cerrar.png" (click)="viewModal = false" alt="">
+            </div>
+            <div class="text-center">
+                <div class="flex gap-2 justify-center items-center border-b border-gray-primary mb-10 pb-5">
+                    <img class="w-14" src="assets/images/ingresar.png" alt="">
+                    <div>
+                        <h4 class="text-red font-mp-condensed text-4xl">INGRESA A TU CUENTA</h4>
+                        <p class="font-mp-regular text-black text-lg">Revisa tus puntos, redime y más.</p>
+                    </div>
+                </div>
+                <div>
+                    <form [formGroup]="formLogin">
+                        <input formControlName="identification" class="jm-input mb-6 md:mb-10" type="text" placeholder="Número de documento" />
+                        <input formControlName="password" class="jm-input mb-6 md:mb-16" type="password" placeholder="Ingresa tu clave" />
+                        @if (viewError) {
+                            <p class="text-red font-mp-regular text-base">Usuario o contraseña incorrecta</p>
+                        }
+                        <div class="text-center">
+                            <button class="bg-fondo-boton pl-20 pr-28 pt-3 pb-10 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="send()">Ingresar</button>
+                        </div>
+                    </form>
+                    <a class="font-mp-regular text-lg inline-block  mt-2" (click)="openEmailModal()">¿Olvidaste tu clave?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+@if (viewModalEmail) {
+    <section class="jm-modal">
+        <div class="jm-fondo-modal"></div>
+        <div class="jm-cont-modal w-11/12 max-w-md">
+            <div class="jm-triangulo-top"></div>
+            <div class="jm-triangulo-bottom"></div>
+            <div class="">
+                <form [formGroup]="formEmail">
+                    <label class="jm-label">Correo electrónico corporativo</label>
+                    <input formControlName="email" class="jm-input" type="text" placeholder="Escribe email secundario" />
+                    @if (emailField.touched && emailField.hasError('required')) {
+                        <p class="jm-error body-3 font-regular text-left">
+                            Campo obligatorio
+                        </p>
+                    }
+                    @if (emailField.touched && emailField.hasError('pattern')) {
+                        <p class="jm-error body-3 font-regular text-left">
+                            Email invalido
+                        </p>
+                    }
+                    @if (emailNotFound) {
+                        <p class="jm-error body-3 font-regular text-left">
+                            El correo no se encuentra registrado
+                        </p>
+                    }
+                    <div class="">
+                        <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-4 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="sendEmail()">Continuar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+}

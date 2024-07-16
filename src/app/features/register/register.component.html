@@ -1,0 +1,162 @@
+<section class="banner relative">
+    <div class="banner-img flex justify-end">
+        <img class="w-full md:w-7/12" src="assets/images/banner-register.png" alt="">
+    </div>
+    <div class="container relative md:absolute md:top-10 left-1/2 h-full py-5 md:py-0 md:pb-20 -translate-x-1/2 px-6 md:px-0">
+        <div class="banner-info w-full md:w-2/5 h-full overflow-auto">
+            <h1 class="font-mp-prosemibold text-gray-secondary text-6xl border-b-2 border-red inline-block pb-2 mb-5">REGÍSTRATE</h1>
+            <form [formGroup]="formRegister">
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Nombre*</label>
+                        <input formControlName="name" class="jm-input" type="text" placeholder="Escribe tu nombre" />
+                        @if (nameField.touched && nameField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Apellido*</label>
+                        <input formControlName="lastName" class="jm-input" type="text" placeholder="Escribe tu apellido" />
+                        @if (lastNameField.touched && lastNameField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Cédula*</label>
+                        <input formControlName="identification" class="jm-input" type="text" placeholder="Escribe tu cédula" />
+                        @if (identificationField.touched && identificationField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                        @if (identificationField.touched && identificationField.hasError('pattern')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Formato invalido
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Teléfono celular*</label>
+                        <input formControlName="telMovil" class="jm-input" type="text" placeholder="Escribe tu teléfono celular" />
+                        @if (telMovilField.touched && telMovilField.hasError('pattern')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Formato invalido
+                            </p>
+                        }
+                        @if (telMovilField.touched && telMovilField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Email corporativo*</label>
+                        <input formControlName="companyEmail" class="jm-input" type="text" placeholder="Escribe email" />
+                        @if (companyEmailField.touched && companyEmailField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                        @if (companyEmailField.touched && companyEmailField.hasError('pattern')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Email invalido
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Email secundario*</label>
+                        <input formControlName="email" class="jm-input" type="text" placeholder="Escribe email secundario" />
+                        @if (emailField.touched && emailField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                        @if (emailField.touched && emailField.hasError('pattern')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Email invalido
+                            </p>
+                        }
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Empresa en la que trabaja*</label>
+                        <input formControlName="companyName" class="jm-input" type="text" placeholder="Escribe nombre de la empresa" />
+                        @if (companyNameField.touched && companyNameField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Fecha de cumpleaños</label>
+                        <input formControlName="birthdayDate" class="jm-input" type="date" placeholder="Fecha" />
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Teléfono personal</label>
+                        <input formControlName="telPersonal" class="jm-input" type="text" placeholder="Escribe teléfono" />
+                        @if (telPersonalField.touched && telPersonalField.hasError('pattern')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Formato invalido
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Cargo</label>
+                        <input formControlName="companyPosition" class="jm-input" type="text" placeholder="Escribe cargo" />
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mb-3 flex-col md:flex-row">
+                    <div class="w-full">
+                        <label class="jm-label">Contraseña*</label>
+                        <input formControlName="password" class="jm-input" type="password" placeholder="Contraseña" />
+                        @if (passwordField.touched && passwordField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                    <div class="w-full">
+                        <label class="jm-label">Confirmar contraseña*</label>
+                        <input formControlName="confirmationPassword" class="jm-input" type="password" placeholder="Confirmar contraseña" />
+                        @if (confirmationPasswordField.touched && confirmationPasswordField.hasError('required')) {
+                            <p class="jm-error body-3 font-regular text-left">
+                                Campo obligatorio
+                            </p>
+                        }
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-14 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="send()">Registrarme</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+@if (viewModal) {
+    <section class="jm-modal">
+        <div class="jm-fondo-modal"></div>
+        <div class="jm-cont-modal w-11/12 max-w-md">
+            <div class="jm-triangulo-top"></div>
+            <div class="jm-triangulo-bottom"></div>
+            <div>
+                <img class="absolute top-5 right-5 w-5 cursor-pointer" src="assets/images/cerrar.png" (click)="viewModal = false" alt="">
+            </div>
+            <div class="text-center">
+                <h4 class="text-red font-mp-condensed text-5xl">Hemos recibido tu solicitud de registro</h4>
+                <p class="font-mp-light text-black text-4xl">Nos comunicaremos contigo una vez sea aprobada para que empieces a disfrutar de los beneficios que <strong class="font-mp-condensed">JMalucelli Travelers </strong>tiene para ti.</p>
+            </div>
+        </div>
+    </section>
+}
