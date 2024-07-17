@@ -40,17 +40,17 @@
                 @for (element of item.listH; track $index) {
                     <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
                         <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
-                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
-                        <button class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
                     </div>
                 }
                 @if (item.listV) {
                     <div [class]="item.active ? 'block' : 'hidden'" class="flex justify-center flex-wrap py-6 mb-6">
                         @for (element of item.listV; track $index) {
                             <div class="relative w-full sm:w-1/2 md:w-1/4 border-r-2 border-red text-center last:border-r-0 mb-4">
-                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
+                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
                                 <img class="m-auto text-center py-3" src="assets/images/car-black.png" alt="">
-                                <button class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
+                                <button (click)="addCar(element)" class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
                             </div>
                         }
                     </div>
@@ -87,8 +87,8 @@
                 @for (element of item.listH; track $index) {
                     <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
                         <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
-                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
-                        <button class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
                     </div>
                 }
             </div>
@@ -113,8 +113,8 @@
                 @for (element of item.listH; track $index) {
                     <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
                         <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
-                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
-                        <button class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
                     </div>
                 }
             </div>
@@ -139,8 +139,8 @@
                 @for (element of item.listH; track $index) {
                     <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
                         <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
-                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
-                        <button class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative md:absolute md:bottom-6 md:right-0 font-mp-light text-3xl gap-3 m-auto md:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
                     </div>
                 }
             </div>
@@ -175,9 +175,9 @@
                     <div [class]="item.active ? 'block' : 'hidden'" class="flex justify-center flex-wrap py-6 mb-6">
                         @for (element of item.listV; track $index) {
                             <div class="relative w-full sm:w-1/2 md:w-1/4 border-r-2 border-red text-center last:border-r-0 mb-4">
-                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
+                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
                                 <img class="m-auto text-center py-3" src="assets/images/car-black.png" alt="">
-                                <button class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
+                                <button (click)="addCar(element)" class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
                             </div>
                         }
                     </div>
@@ -206,9 +206,9 @@
                     <div [class]="item.active ? 'block' : 'hidden'" class="flex justify-center flex-wrap py-6 mb-6">
                         @for (element of item.listV; track $index) {
                             <div class="relative w-full sm:w-1/2 md:w-1/4 border-r-2 border-red text-center last:border-r-0 mb-4">
-                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
+                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
                                 <img class="m-auto text-center py-3" src="assets/images/car-black.png" alt="">
-                                <button class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
+                                <button (click)="addCar(element)" class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
                             </div>
                         }
                     </div>
@@ -247,9 +247,9 @@
                     <div [class]="item.active ? 'block' : 'hidden'" class="flex justify-center flex-wrap py-6 mb-6">
                         @for (element of item.listV; track $index) {
                             <div class="relative w-full sm:w-1/2 md:w-1/4 border-r-2 border-red text-center last:border-r-0 mb-4">
-                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
+                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
                                 <img class="m-auto text-center py-3" src="assets/images/car-black.png" alt="">
-                                <button class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
+                                <button (click)="addCar(element)" class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
                             </div>
                         }
                     </div>
@@ -278,9 +278,9 @@
                     <div [class]="item.active ? 'block' : 'hidden'" class="flex justify-center flex-wrap py-6 mb-6">
                         @for (element of item.listV; track $index) {
                             <div class="relative w-full sm:w-1/2 md:w-1/4 border-r-2 border-red text-center last:border-r-0 mb-4">
-                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.points}}</strong> Puntos</h3>
+                                <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
                                 <img class="m-auto text-center py-3" src="assets/images/car-black.png" alt="">
-                                <button class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
+                                <button (click)="addCar(element)" class="bottom-6 right-0 font-mp-light text-3xl">Agregar al carrito</button>
                             </div>
                         }
                     </div>
