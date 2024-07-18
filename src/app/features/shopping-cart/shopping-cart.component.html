@@ -33,6 +33,7 @@
                                 <p>Total:</p>
                                 <p class="font-mp-bold">{{item.total}}</p>
                             </div>
+                            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item)">Eliminar</button>
                         </div>
                     }
                 </div>
@@ -63,7 +64,7 @@
                                 <p class="font-mp-bold text-2xl text-center "><strong class="text-5xl">{{item.total}}</strong> Puntos</p>
                             </td>
                             <td class="w-2/12 p-3 bg-gray-primary border-r border-white">
-                                <button (click)="deleteItem(item)">borrar del carrito</button>
+                                <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item)">Eliminar</button>
                             </td>
                         </tr>
                     }

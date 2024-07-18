@@ -58,13 +58,9 @@ export class RegisterComponent {
 
       this.userService.createUser(data).subscribe({
         next: (response) => {
-          console.log("bien")
-          console.log(response)
           this.viewModal = true;
         },
         error: (response) =>{
-          console.log("error")
-          console.log(response)
         }
       })
     } else {

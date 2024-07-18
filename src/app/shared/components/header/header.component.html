@@ -13,8 +13,14 @@
                 <div class="w-full md:w-7/12 relative">
                     <nav>
                         <ul class="flex flex-col md:flex-row justify-end items-center">
-                            @for (item of mainMenu; track $index) {
-                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" [routerLink]="item.link" [target]="item.target">{{item.text}}</a></li>
+                            @if (sessionService.token) {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" routerLink="/catalogo">Catálogo</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" routerLink="/ayuda">Ayuda</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" routerLink="/">Volver a JMTRV</a></li>
+                            } @else {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" href="https://www.jmtrv.com.co/?page_id=1190" target="_blank">Consulta tu póliza</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" href="https://gol.jmtrv.com.co/Home/Login" target="_blank">Paga tu póliza</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" href="https://gol.jmtrv.com.co/Home/Login" target="_blank">Accede al portal</a></li>
                             }
                         </ul>
                     </nav>
@@ -22,10 +28,13 @@
                 <div class="w-full md:w-5/12 bg-red h-32 relative">
                     <nav class="h-full flex justify-start items-center">
                         <ul class="flex flex-col md:flex-row justify-start items-center h-full w-full">
-                            @for (item of authMenu; track $index) {
-                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" [routerLink]="item.link" [target]="item.target">{{item.text}}</a></li>
+                            @if (sessionService.token) {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" routerLink="/mis-puntos">Mis puntos</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" (click)="logOut()">Cerrar sesión</p></li>
+                            } @else {
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" routerLink="/registro">Regístrate</a></li>
+                                <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" (click)="showModal()">Ingresa a tu cuenta</p></li>
                             }
-                            <li class="last:border-none md:border-r border-b md:border-b-0 border-white w-full md:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 md:py-1 hover:underline cursor-pointer" (click)="showModal()">Ingresa a tu cuenta</p></li>
                         </ul>
                         <!-- <img width="60" src="assets/icons/search.png" alt="search"> -->
                     </nav>

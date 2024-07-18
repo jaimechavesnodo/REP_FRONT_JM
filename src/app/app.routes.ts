@@ -7,6 +7,7 @@ import { ShoppingCartComponent } from './features/shopping-cart/shopping-cart.co
 import { RecoverPasswordComponent } from './features/recover-password/recover-password.component';
 import { MyExchangesComponent } from './features/my-exchanges/my-exchanges.component';
 import { CatalogueComponent } from './features/catalogue/catalogue.component';
+import { loginGuard } from './core/guards/login.guard';
 
 export const routes: Routes = [
     {
@@ -19,15 +20,18 @@ export const routes: Routes = [
     },
     {
         path:'mis-puntos',
-        component: MyPointsComponent
+        component: MyPointsComponent,
+        canActivate: [loginGuard]
     },
     {
         path:'ayuda',
-        component: HelpComponent
+        component: HelpComponent,
+        canActivate: [loginGuard]
     },
     {
         path:'carrito-de-compras',
-        component: ShoppingCartComponent
+        component: ShoppingCartComponent,
+        canActivate: [loginGuard]
     },
     {
         path:'crear-contrasena',
@@ -39,10 +43,12 @@ export const routes: Routes = [
     },
     {
         path:'mis-canjes',
-        component: MyExchangesComponent
+        component: MyExchangesComponent,
+        canActivate: [loginGuard]
     },
     {
         path:'catalogo',
-        component: CatalogueComponent
+        component: CatalogueComponent,
+        canActivate: [loginGuard]
     }
 ];

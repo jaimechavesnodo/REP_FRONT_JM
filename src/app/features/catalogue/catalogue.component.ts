@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-catalogue',
@@ -11,6 +12,7 @@ import { UserService } from '../../core/services/user.service';
 export class CatalogueComponent {
 
   private userService = inject(UserService)
+  private router = inject(Router)
 
   listSerata = [
     {
@@ -404,7 +406,6 @@ export class CatalogueComponent {
   ]
 
   addCar(element:any){
-    console.log(element)
 
     const data = {
       idProduct: element.idProduct,
@@ -413,64 +414,47 @@ export class CatalogueComponent {
       pointsProduct: element.pointsProduct,
       redeemedAmount: 1,
       total: element.pointsProduct,
-      idUser: localStorage.getItem("UMalucelli")
+      idUser: sessionStorage.getItem("userId")
     }
 
     this.userService.saveProductsCart(data).subscribe({
       next: (response) => {
-        console.log(response)
+        this.router.navigate(["/carrito-de-compras"]);
       },
       error: (error) => {
-        console.log(error)
       }
     })
   }
   
   activeItemSerata(id:any) {
-    console.log(id)
     this.listSerata[id].active = !this.listSerata[id].active
-    console.log(this.listSerata[id].active);
   }
 
   activeItemMatumbe(id:any) {
-    console.log(id)
     this.listMatumbe[id].active = !this.listMatumbe[id].active
-    console.log(this.listMatumbe[id].active);
   }
 
   activeItemCyglo(id:any) {
-    console.log(id)
     this.listCyglo[id].active = !this.listCyglo[id].active
-    console.log(this.listCyglo[id].active);
   }
 
   activeItemPilates(id:any) {
-    console.log(id)
     this.listPilates[id].active = !this.listPilates[id].active
-    console.log(this.listPilates[id].active);
   }
 
   activeItemTuboleta(id:any) {
-    console.log(id)
     this.listTuboleta[id].active = !this.listTuboleta[id].active
-    console.log(this.listTuboleta[id].active);
   }
 
   activeItemTeatro(id:any) {
-    console.log(id)
     this.listTeatro[id].active = !this.listTeatro[id].active
-    console.log(this.listTeatro[id].active);
   }
 
   activeItemKift(id:any) {
-    console.log(id)
     this.listKift[id].active = !this.listKift[id].active
-    console.log(this.listKift[id].active);
   }
 
   activeItemAviatur(id:any) {
-    console.log(id)
     this.listAviatur[id].active = !this.listAviatur[id].active
-    console.log(this.listAviatur[id].active);
   }
 }

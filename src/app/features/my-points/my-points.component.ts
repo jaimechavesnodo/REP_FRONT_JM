@@ -1,10 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-my-points',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './my-points.component.html',
   styleUrl: './my-points.component.scss'
 })
@@ -18,9 +21,9 @@ export class MyPointsComponent {
   currentMonth:any;
 
   ngOnInit() {
-    this.userService.getPointClient(localStorage.getItem("UMalucelli")).subscribe({
+    this.userService.getPointClient(sessionStorage.getItem("userId")).subscribe({
       next: (response: any) => {
-        console.log(response)
+        console.log(response);
         if (response) {
           this.myPoints = response.pointsCurrent;
           this.PointsMonth = response.PointsAccumulatedPreviousMonth;
@@ -32,7 +35,6 @@ export class MyPointsComponent {
         }
       },
       error: (error) => {
-        console.log(error)
       }
     })
   

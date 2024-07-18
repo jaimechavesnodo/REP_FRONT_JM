@@ -9,7 +9,7 @@
                     <img class="w-60 md:w-3/5 md:mb-5 m-auto md:m-0 mb-7" src="assets/images/Logo-JMTRV-footer.png" alt="">
                     <ul class="flex items-center justify-center w-full md:w-3/5 gap-3 mb-10">
                         @for (item of socialNetworks; track $index) {
-                            <li><a [routerLink]="item.link" [target]="item.target"><img class="" [src]="item.icon" alt=""></a></li>
+                            <li><a [href]="item.link" [target]="item.target"><img class="" [src]="item.icon" alt=""></a></li>
                         }
                     </ul>
                 </div>

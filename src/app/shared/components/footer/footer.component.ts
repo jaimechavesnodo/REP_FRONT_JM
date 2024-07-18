@@ -16,17 +16,17 @@ export class FooterComponent {
   socialNetworks: SocialNetworks[] = [
     {
       icon: "assets/icons/LinkeIN.png",
-      link: "",
+      link: "https://www.linkedin.com/company/jmalucelli-travelers-seguros/?viewAsMember=true",
       target: "_blank",
     },
     {
       icon: "assets/icons/Facebook.png",
-      link: "",
+      link: "https://www.facebook.com/JMTRV",
       target: "_blank",
     },
     {
       icon: "assets/icons/Youtube.png",
-      link: "",
+      link: "https://www.youtube.com/@jmalucellitravelersseguros7672",
       target: "_blank",
     },
   ]
@@ -35,14 +35,14 @@ export class FooterComponent {
     {
       icon: "assets/icons/Telefono.png",
       title: "Número de teléfono:",
-      text: "(601) 794 5774",
+      text: "(601) 794 5774 ext: 2042",
       link: "tel:(601)7945774"
     },
     {
       icon: "assets/icons/Mensaje.png",
       title: "Correo electrónico:",
-      text: "jmtr@jmtrv.com.co",
-      link: "mailto:jmtr@jmtrv.com.co"
+      text: "jmtrv@jmtrv.com.co",
+      link: "mailto:jmtrv@jmtrv.com.co"
     },
     {
       icon: "assets/icons/ubicación.png",

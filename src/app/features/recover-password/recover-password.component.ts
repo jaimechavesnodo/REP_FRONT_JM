@@ -22,7 +22,6 @@ export class RecoverPasswordComponent {
 
   ngOnInit() {
     this.buildForm();
-    console.log(this.id);
     
   }
 
@@ -37,13 +36,9 @@ export class RecoverPasswordComponent {
     if (this.formPassword.valid) {
       this.userService.recoverPassword({password: this.passwordField.value}, this.id).subscribe({
         next: (response) => {
-          console.log("bien")
-          console.log(response)
           this.viewModal = true;
         },
         error: (response) =>{
-          console.log("error")
-          console.log(response)
         }
       })
     } else {

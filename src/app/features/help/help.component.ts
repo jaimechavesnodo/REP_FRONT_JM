@@ -58,9 +58,7 @@ export class HelpComponent {
   ]
 
   activeItem(id:any) {
-    console.log(id)
     this.list[id].active = !this.list[id].active
-    console.log(this.list[id].active);
     
   }
 

@@ -18,16 +18,13 @@ export class ShoppingCartComponent {
   myPoints: Number | undefined;
   
   ngOnInit() {
-    console.log(window.innerWidth)
-    console.log(this.listProducts.length);
 
     if (window.innerWidth < 768) {
       this.isMovile = true;
     }
 
-    this.userService.getPointClient(localStorage.getItem("UMalucelli")).subscribe({
+    this.userService.getPointClient(sessionStorage.getItem("userId")).subscribe({
       next: (response: any) => {
-        console.log(response)
         if (response) {
           this.myPoints = response.pointsCurrent;
         } else {
@@ -35,7 +32,6 @@ export class ShoppingCartComponent {
         }
       },
       error: (error) => {
-        console.log(error)
       }
     })
 
@@ -43,32 +39,27 @@ export class ShoppingCartComponent {
   }
 
   getCartproduct(){
-    this.userService.getCartData(localStorage.getItem("UMalucelli")).subscribe({
+    this.userService.getCartData(sessionStorage.getItem("userId")).subscribe({
       next: (response: any) => {
-        console.log(response)
         this.listProducts = response
       },
       error: (error) => {
-        console.log(error)
       }
     })
   }
 
   deleteItem(item: any) {
-    this.userService.deleteProduct(localStorage.getItem("UMalucelli"), item.idProduct).subscribe({
+    this.userService.deleteProduct(sessionStorage.getItem("userId"), item.idProduct).subscribe({
       next: (response: any) => {
-        console.log(response)
         this.getCartproduct()
         this.errorPoints = false;
       },
       error: (error) => {
-        console.log(error)
       }
     })
   }
 
   CreateRedeemtion(){
-    console.log("enter");
     
     const data = []
     for (let item of this.listProducts) {
@@ -81,13 +72,10 @@ export class ShoppingCartComponent {
         }
       )
     }
-    console.log(data)
     this.userService.CreateRedeemtion(data).subscribe({
       next: (response: any) => {
-        console.log(response)
       },
       error: (error) => {
-        console.log(error)
         this.errorPoints = true;
       }
     })

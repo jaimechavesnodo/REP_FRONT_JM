@@ -1,15 +1,18 @@
-import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject, signal } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Menu } from '../../../core/models/manu.interface';
 import { UserService } from '../../../core/services/user.service';
+import { SessionService } from '../../../core/services/session.service';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     RouterLink,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    JsonPipe
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -17,32 +20,11 @@ import { UserService } from '../../../core/services/user.service';
 export class HeaderComponent {
 
   private userService = inject(UserService)
+  private router = inject(Router)
+  sessionService = inject(SessionService)
 
-  mainMenu : Menu[] = [
-    {
-      text: "Consulta tu póliza",
-      link: "",
-      target: "",
-    },
-    {
-      text: "Paga tu póliza",
-      link: "",
-      target: "",
-    },
-    {
-      text: "Accede al portal",
-      link: "",
-      target: "",
-    },
-  ]
-
-  authMenu : Menu[] = [
-    {
-      text: "Regístrate",
-      link: "/registro",
-      target: "",
-    }
-  ]
+  mainMenu : Menu[] = []
+  authMenu : Menu[] = []
   formLogin!: FormGroup;
   formEmail!: FormGroup;
   viewModal: boolean = false;
@@ -51,10 +33,10 @@ export class HeaderComponent {
   viewError: boolean = false;
   viewModalEmail: boolean = false;
   emailNotFound: boolean = false;
+  login: boolean = false;
 
   ngOnInit() {
     this.buildForm();
-    console.log(window.innerWidth)
 
     if (window.innerWidth < 768) {
       this.showMenu = false;
@@ -81,8 +63,10 @@ export class HeaderComponent {
 
     this.userService.loginUser(data).subscribe({
       next: (response: any) => {
-        localStorage.setItem("UMalucelli", response.idUser)
-        this.viewModal = false
+        sessionStorage.setItem("userId", response.idUser);
+        sessionStorage.setItem("sessionToken", response.access_token);
+        this.sessionService.setToken(response.access_token);
+        this.viewModal = false;
       },
       error: (_response) =>{
         this.viewError = true;
@@ -103,6 +87,14 @@ export class HeaderComponent {
     } else {
       this.formEmail.markAllAsTouched();
     }
+  }
+
+  logOut(){
+    console.log("cerrar");
+    
+    sessionStorage.clear();
+    this.sessionService.setToken(null);
+    this.router.navigate(["/"]);
   }
 
   openEmailModal() {
