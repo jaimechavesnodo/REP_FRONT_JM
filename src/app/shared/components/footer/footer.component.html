@@ -37,7 +37,7 @@
                         <ul>
                             @for (item of item.items; track $index) {
                                 <li class="pl-6 relative mb-3 before:absolute before:w-5 before:h-5 before:bg-red before:left-0 before:rounded-3xl before:top-1">
-                                    <p class="text-white font-mp-light text-xl">{{item}}</p>
+                                    <a class="text-white font-mp-light text-xl" [href]="item.link" target="_blank">{{item.name}}</a>
                                 </li>
                             }
                         </ul>

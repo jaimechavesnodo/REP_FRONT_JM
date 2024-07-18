@@ -13,5 +13,5 @@ export interface SocialNetworks {
 
 export interface Links {
     title: string;
-    items: string[];
+    items: any[];
 }

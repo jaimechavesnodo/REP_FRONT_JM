@@ -25,84 +25,84 @@ export class CatalogueComponent {
           imageUrl: "assets/images/seratta.png",
           description: "acércate a la cultura de España desde sus sabores icónicos, en compañía del Chef podrás preparar un menú tradicional con Pulpo a la Gallega, Tortilla Española, Paella y el toque dulce de la Crema Catalana.",
           desc: "<p><span>Recorriendo España:</span> acércate a la cultura de España desde sus sabores icónicos, en compañía del Chef podrás preparar un menú tradicional con Pulpo a la Gallega, Tortilla Española, Paella y el toque dulce de la Crema Catalana.</p>",
-          pointsProduct: "125500"
+          pointsProduct: "126"
         },
         {
           idProduct: 4,
           imageUrl: "assets/images/seratta.png",
           description: "desde la pizzeta y la ensalada perfecta, hasta la pasta y el postre ideal para conocer un menú italiano tradicional que cuenta la mejor historia de amor a través de cada bocado.",
           desc: "<p><span>Un Viaggio in Italia:</span> desde la pizzeta y la ensalada perfecta, hasta la pasta y el postre ideal para conocer un menú italiano tradicional que cuenta la mejor historia de amor a través de cada bocado.</p>",
-          pointsProduct: "149900"
+          pointsProduct: "150"
         },
         {
           idProduct: 5,
           imageUrl: "assets/images/seratta.png",
           description: "aprende a hacer la pizza napolitana perfecta, desde la preparación de su masa, hasta la elección de cada ingrediente, conocerás los secretos para preparar y disfrutar tres pizzas insignia de Italia.",
           desc: "<p><span>Pizza Per il Cuore:</span> aprende a hacer la pizza napolitana perfecta, desde la preparación de su masa, hasta la elección de cada ingrediente, conocerás los secretos para preparar y disfrutar tres pizzas insignia de Italia.</p>",
-          pointsProduct: "149900"
+          pointsProduct: "150"
         },
         {
           idProduct: 6,
           imageUrl: "assets/images/seratta.png",
           description: "conoce y disfruta de nuevos sabores de quesos maduradores y cortes de jamón exclusivos, mientras aprendes sobre su clasificación, su denominación de origen y el maridaje perfecto para cada uno de ellos. ",
           desc: "<p><span>El Arte de la Xarcutería:</span> conoce y disfruta de nuevos sabores de quesos maduradores y cortes de jamón exclusivos, mientras aprendes sobre su clasificación, su denominación de origen y el maridaje perfecto para cada uno de ellos.</p>",
-          pointsProduct: "147000"
+          pointsProduct: "147"
         },
         {
           idProduct: 7,
           imageUrl: "assets/images/seratta.png",
           description: "en compañía del sommelier aprenderás sobre las bondades, clasificaciones, estilos y variedades de los vinos que despiertan todos tus sentidos.",
           desc: "<p><span>Vine por Vino:</span> en compañía del sommelier aprenderás sobre las bondades, clasificaciones, estilos y variedades de los vinos que despiertan todos tus sentidos.</p>",
-          pointsProduct: "152400"
+          pointsProduct: "153"
         },
         {
           idProduct: 8,
           imageUrl: "assets/images/seratta.png",
           description: " conoce las interesantes combinaciones del mundo del Gin en compañía de un bartender experto en mezclas y preparaciones que te ayudarán a convertirete en el mejor anfitrión coctelero. ",
           desc: "<p><span>Gin for Me Gin for Us:</span> conoce las interesantes combinaciones del mundo del Gin en compañía de un bartender experto en mezclas y preparaciones que te ayudarán a convertirete en el mejor anfitrión coctelero.</p>",
-          pointsProduct: "189500"
+          pointsProduct: "190"
         },
         {
           idProduct: 9,
           imageUrl: "assets/images/seratta.png",
           description: "explora este viaje de sabores, técnicas y preparaciones de una de las cocinas más complejas y deliciosas del mundo. Cada vocado y preparación serán una experiencia única entre 12 pasos de degustación. ",
           desc: "<p><span>Degustando Japón:</span> explora este viaje de sabores, técnicas y preparaciones de una de las cocinas más complejas y deliciosas del mundo. Cada vocado y preparación serán una experiencia única entre 12 pasos de degustación.</p>",
-          pointsProduct: "284400"
+          pointsProduct: "284"
         },
         {
           idProduct: 10,
           imageUrl: "assets/images/seratta.png",
           description: " en compañía de un experto en sushi podrás aprender y degustar sobre makis, nigiris y sashimis frescos. Todo en compañía de un Itamae que se encargará de hacer de tu experiencia un momento increíble. ",
           desc: "<p><span>En Manos del Itamae:</span> en compañía de un experto en sushi podrás aprender y degustar sobre makis, nigiris y sashimis frescos. Todo en compañía de un Itamae que se encargará de hacer de tu experiencia un momento increíble.</p>",
-          pointsProduct: "259200"
+          pointsProduct: "259"
         },
         {
           idProduct: 11,
           imageUrl: "assets/images/seratta.png",
           description: "a través de este recorrido de sabores podrás conocer un poco más de España y sus platillos emblemáticos. Entre ellos cortes de jamón de la mejor calidad, Tortilla Española, Croquetas Ibéricas y otras delicias que te llevarán a vivir un verano auropeo. ",
           desc: "<p><span>Y Olé:</span> a través de este recorrido de sabores podrás conocer un poco más de España y sus platillos emblemáticos. Entre ellos cortes de jamón de la mejor calidad, Tortilla Española, Croquetas Ibéricas y otras delicias que te llevarán a vivir un verano auropeo.</p>",
-          pointsProduct: "159900"
+          pointsProduct: "160"
         },
         {
           idProduct: 12,
           imageUrl: "assets/images/seratta.png",
           description: " en compañía de un Chef experto aprenderás a identificar y disfrutar de la frescura de los productos del mar, preparando deliciosos ceviches de la cocinca latina y Nikkei. ",
           desc: "<p><span>Entre Mares:</span> en compañía de un Chef experto aprenderás a identificar y disfrutar de la frescura de los productos del mar, preparando deliciosos ceviches de la cocinca latina y Nikkei.</p>",
-          pointsProduct: "146800"
+          pointsProduct: "147"
         },
         {
           idProduct: 13,
           imageUrl: "assets/images/seratta.png",
           description: "a través de cada bocado de platos emblemáticos de la cocinca nipona aprenderás de la traidicón culinario japonesa. Disfruta de sabores donde los suhis, nigiris y platos emblemáticos de esta cocina te harán vivir una experiencia única. ",
           desc: "<p><span>Otafuku Omakase:</span> a través de cada bocado de platos emblemáticos de la cocinca nipona aprenderás de la traidicón culinario japonesa. Disfruta de sabores donde los suhis, nigiris y platos emblemáticos de esta cocina te harán vivir una experiencia única.</p>",
-          pointsProduct: "190000"
+          pointsProduct: "190"
         },
         {
           idProduct: 14,
           imageUrl: "assets/images/seratta.png",
           description: "aprende los mejores secretos y trucos para preparar pasta como un auténtico italiano, en compañía de un Chef experto podrás balancear y disfrutar los mejores sabores de la cocina Italiana. ",
           desc: "<p><span>La Vera Italia:</span> aprende los mejores secretos y trucos para preparar pasta como un auténtico italiano, en compañía de un Chef experto podrás balancear y disfrutar los mejores sabores de la cocina Italiana.</p>",
-          pointsProduct: "144600"
+          pointsProduct: "145"
         },
       ]
     },
@@ -116,25 +116,25 @@ export class CatalogueComponent {
           idProduct: 15,
           imageUrl: "/assets/images/bono-seratta.png",
           description: "Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Serrata de tu elección. El bono tiene una validez de un año después de la fecha de redención. Aplican los TYC definidos por Grupo Seratta, disponibles en: https://www.restauranteseratta.com/terminos-condiciones ",
-          pointsProduct:"100000"
+          pointsProduct:"100"
         },
         {
           idProduct: 16,
           imageUrl: "/assets/images/bono-seratta.png",
           description: "Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Serrata de tu elección. El bono tiene una validez de un año después de la fecha de redención. Aplican los TYC definidos por Grupo Seratta, disponibles en: https://www.restauranteseratta.com/terminos-condiciones ",
-          pointsProduct:"200000"
+          pointsProduct:"200"
         },
         {
           idProduct: 17,
           imageUrl: "/assets/images/bono-seratta.png",
           description: "Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Serrata de tu elección. El bono tiene una validez de un año después de la fecha de redención. Aplican los TYC definidos por Grupo Seratta, disponibles en: https://www.restauranteseratta.com/terminos-condiciones ",
-          pointsProduct:"500000"
+          pointsProduct:"500"
         },
         {
           idProduct: 18,
           imageUrl: "/assets/images/bono-seratta.png",
           description: "Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Serrata de tu elección. El bono tiene una validez de un año después de la fecha de redención. Aplican los TYC definidos por Grupo Seratta, disponibles en: https://www.restauranteseratta.com/terminos-condiciones ",
-          pointsProduct:"1000000"
+          pointsProduct:"1000"
         }
       ]
     },
@@ -148,19 +148,19 @@ export class CatalogueComponent {
           idProduct: 19,
           imageUrl: "assets/images/evento-seratta.png",
           description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-          pointsProduct:"59900"
+          pointsProduct:"60"
         },
         {
           idProduct: 20,
           imageUrl: "assets/images/evento-seratta.png",
           description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-          pointsProduct:"158400"
+          pointsProduct:"159"
         },
         {
           idProduct: 21,
           imageUrl: "assets/images/evento-seratta.png",
           description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-          pointsProduct:"129900"
+          pointsProduct:"130"
         }
       ]
     },
@@ -177,7 +177,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/matumbe.png",
           description: "A ponernos en movimiento. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos, en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio y la ubicación espacial y tener un espacio divertido y de recarga. Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí.",
           desc: "<p>A ponernos en movimiento. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos, en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio y la ubicación espacial y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a <span>la línea de WA de Matumbé (+57 3164713110)</span> y aplican los TYC definidos por el studio fitness, disponibles aquí.</p>",
-          pointsProduct: "45000"
+          pointsProduct: "45"
         }
       ]
     },
@@ -191,7 +191,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/matumbe.png",
           description: "Un espacio creado para tu bienestar. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio, la ubicación espacial, y tener un espacio divertido y de recarga. Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí.",
           desc: "<p>Un espacio creado para tu bienestar. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio, la ubicación espacial, y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí. </p>",
-          pointsProduct: "130000"
+          pointsProduct: "130"
         }
       ]
     }
@@ -208,7 +208,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/cyglo.png",
           description: "Clases de 45 minutos en las que la música es tu paisaje, y la bici tu mejor aliado para recorrerlo. Una rumba asegurada. Enfoque cardiovascular de alta intensidad. Aplican TyC de Cyglo, disponibles en: https://cyglo.co/terminos-y-condiciones",
           desc: "<p>Clases de 45 minutos en las que la música es tu paisaje, y la bici tu mejor aliado para recorrerlo.<br>Una rumba asegurada.<br>Enfoque cardiovascular de alta intensidad.<br>Aplican TyC de Cyglo, disponibles en: <a href='https://cyglo.co/terminos-y-condiciones' target='_blank'>https://cyglo.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "53000"
+          pointsProduct: "53"
         }
       ]
     },
@@ -222,7 +222,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/cyglo.png",
           description: "Un tiempo dedicado a ti. Semana introductoria de 7 clases, es válido por siete días consecutivos a partir del día de tu primera reserva. Esta semana te permite probar nuestros diferentes tipos de clase (FYRE, FLOW, RIDE, BOOST), coaches, horarios y estudios. Puedes tomar las clases que desees en ese plazo de siete días. Aplicar TyC de Cyglo, disponibles en: https://cyglo.co/terminos-y-condiciones",
           desc: "<p>Un tiempo dedicado a ti. Semana introductoria de 7 clases, es válido por siete días consecutivos a partir del día de tu primera reserva. Esta semana te permite probar nuestros diferentes tipos de clase (FYRE, FLOW, RIDE, BOOST), coaches, horarios y estudios. Puedes tomar las clases que desees en ese plazo de siete días. Aplicar TyC de Cyglo, disponibles en: <a href='https://cyglo.co/terminos-y-condiciones' target='_blank'>https://cyglo.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "76000"
+          pointsProduct: "76"
         }
       ]
     }
@@ -239,7 +239,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/pitales.png",
           description: "Dedica un espacio para tu cuerpo y bienestar. Clases de 40-55 minutos en las que puedes elegir entre PILATES PRO - PILATES CLASSIC - PILATES MAT - BARRE PRO - STRETCH & RESTORE. La disponibilidad de cada clase depende de las sedes de Pilates ProWorks. Aplican TYC presentados por Pilates ProWorks, disponibles aquí.",
           desc: "<p>Dedica un espacio para tu cuerpo y bienestar. Clases de 40-55 minutos en las que puedes elegir entre PILATES PRO - PILATES CLASSIC - PILATES MAT - BARRE PRO - STRETCH & RESTORE. La disponibilidad de cada clase depende de las sedes de Pilates ProWorks. Aplican TYC presentados por Pilates ProWorks, disponibles aquí.</p>",
-          pointsProduct: "56800"
+          pointsProduct: "57"
         }
       ]
     }
@@ -255,37 +255,37 @@ export class CatalogueComponent {
           idProduct: 27,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"50000"
+          pointsProduct:"50"
         },
         {
           idProduct: 28,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"100000"
+          pointsProduct:"100"
         },
         {
           idProduct: 29,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"200000"
+          pointsProduct:"200"
         },
         {
           idProduct: 30,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"300000"
+          pointsProduct:"300"
         },
         {
           idProduct: 31,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"400000"
+          pointsProduct:"400"
         },
         {
           idProduct: 32,
           imageUrl: "assets/images/tuboleta.png",
           description: "Nuevas Experiencias y diversión. Bono disponible para adquirir las boletas de tus eventos favoritos a través de TuBoleta. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por TuBoleta, disponibles en:  https://acortar.link/aE7YJR y https://acortar.link/bJH6WD",
-          pointsProduct:"500000"
+          pointsProduct:"500"
         }
       ]
     }
@@ -301,19 +301,19 @@ export class CatalogueComponent {
           idProduct: 33,
           imageUrl: "assets/images/teatro.png",
           description: "Un punto de encuentro con la cultura. Bono disponible para adquirir las boletas a tus eventos favoritos en el Teatro Nacional .Ten en cuenta el valor del bono que deseas redimir.Aplican TYC presentados por Teatro Nacional, disponibles en: https://teatronacional.co/terminos-y-condiciones/",
-          pointsProduct:"80000"
+          pointsProduct:"80"
         },
         {
           idProduct: 34,
           imageUrl: "assets/images/teatro.png",
           description: "Un punto de encuentro con la cultura. Bono disponible para adquirir las boletas a tus eventos favoritos en el Teatro Nacional .Ten en cuenta el valor del bono que deseas redimir.Aplican TYC presentados por Teatro Nacional, disponibles en: https://teatronacional.co/terminos-y-condiciones/",
-          pointsProduct:"100000"
+          pointsProduct:"100"
         },
         {
           idProduct: 35,
           imageUrl: "assets/images/teatro.png",
           description: "Un punto de encuentro con la cultura. Bono disponible para adquirir las boletas a tus eventos favoritos en el Teatro Nacional .Ten en cuenta el valor del bono que deseas redimir.Aplican TYC presentados por Teatro Nacional, disponibles en: https://teatronacional.co/terminos-y-condiciones/",
-          pointsProduct:"150000"
+          pointsProduct:"150"
         }
       ]
     }
@@ -329,31 +329,31 @@ export class CatalogueComponent {
           idProduct: 36,
           imageUrl: "assets/images/kift.png",
           description: "Múltiples opciones para redimir. Bono disponible para escoger entre un catálogo de más de 50 marcas. Recuerda que el valor mínimo de redención es de 25.000. Aplican TyC presentados por Kiosco, disponibles en: http://www.elkioscodelregalo.com/t-rminos---condiciones.html",
-          pointsProduct:"25000"
+          pointsProduct:"25"
         },
         {
           idProduct: 37,
           imageUrl: "assets/images/kift.png",
           description: "Múltiples opciones para redimir. Bono disponible para escoger entre un catálogo de más de 50 marcas. Recuerda que el valor mínimo de redención es de 25.000. Aplican TyC presentados por Kiosco, disponibles en: http://www.elkioscodelregalo.com/t-rminos---condiciones.html",
-          pointsProduct:"50000"
+          pointsProduct:"50"
         },
         {
           idProduct: 38,
           imageUrl: "assets/images/kift.png",
           description: "Múltiples opciones para redimir. Bono disponible para escoger entre un catálogo de más de 50 marcas. Recuerda que el valor mínimo de redención es de 25.000. Aplican TyC presentados por Kiosco, disponibles en: http://www.elkioscodelregalo.com/t-rminos---condiciones.html",
-          pointsProduct:"100000"
+          pointsProduct:"100"
         },
         {
           idProduct: 39,
           imageUrl: "assets/images/kift.png",
           description: "Múltiples opciones para redimir. Bono disponible para escoger entre un catálogo de más de 50 marcas. Recuerda que el valor mínimo de redención es de 25.000. Aplican TyC presentados por Kiosco, disponibles en: http://www.elkioscodelregalo.com/t-rminos---condiciones.html",
-          pointsProduct:"250000"
+          pointsProduct:"250"
         },
         {
           idProduct: 40,
           imageUrl: "assets/images/kift.png",
           description: "Múltiples opciones para redimir. Bono disponible para escoger entre un catálogo de más de 50 marcas. Recuerda que el valor mínimo de redención es de 25.000. Aplican TyC presentados por Kiosco, disponibles en: http://www.elkioscodelregalo.com/t-rminos---condiciones.html",
-          pointsProduct:"500000"
+          pointsProduct:"500"
         }
       ]
     }
@@ -369,37 +369,37 @@ export class CatalogueComponent {
           idProduct: 41,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"50000"
+          pointsProduct:"50"
         },
         {
           idProduct: 42,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"100000"
+          pointsProduct:"100"
         },
         {
           idProduct: 43,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"200000"
+          pointsProduct:"200"
         },
         {
           idProduct: 44,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"3000000"
+          pointsProduct:"3000"
         },
         {
           idProduct: 45,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"500000"
+          pointsProduct:"500"
         },
         {
           idProduct: 46,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"1000000"
+          pointsProduct:"1000"
         }
       ]
     }
