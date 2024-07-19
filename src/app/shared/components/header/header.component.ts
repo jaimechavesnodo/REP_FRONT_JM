@@ -38,7 +38,7 @@ export class HeaderComponent {
   ngOnInit() {
     this.buildForm();
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1025) {
       this.showMenu = false;
       this.viewImgMenu = true;
     }
@@ -66,6 +66,7 @@ export class HeaderComponent {
         sessionStorage.setItem("userId", response.idUser);
         sessionStorage.setItem("sessionToken", response.access_token);
         this.sessionService.setToken(response.access_token);
+        this.router.navigate(["/mis-puntos"]);
         this.viewModal = false;
       },
       error: (_response) =>{

@@ -4,21 +4,21 @@
     </div>
     <div class="w-full bg-black">
         <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row items-center justify-center border-b-white border-b pb-8 mb-8 pt-10">
-                <div class="w-full md:w-4/6 items-center justify-center">
-                    <img class="w-60 md:w-3/5 md:mb-5 m-auto md:m-0 mb-7" src="assets/images/Logo-JMTRV-footer.png" alt="">
-                    <ul class="flex items-center justify-center w-full md:w-3/5 gap-3 mb-10">
+            <div class="flex flex-col lg:flex-row items-center justify-center border-b-white border-b pb-8 mb-8 pt-10">
+                <div class="w-full lg:w-4/6 items-center justify-center">
+                    <img class="w-60 lg:w-3/5 lg:mb-5 m-auto lg:m-0 mb-7" src="assets/images/Logo-JMTRV-footer.png" alt="">
+                    <ul class="flex items-center justify-center w-full lg:w-3/5 gap-3 mb-10">
                         @for (item of socialNetworks; track $index) {
                             <li><a [href]="item.link" [target]="item.target"><img class="" [src]="item.icon" alt=""></a></li>
                         }
                     </ul>
                 </div>
-                <div class="w-full md:w-2/6 px-10 sm:px-20">
+                <div class="w-full lg:w-2/6 px-10 sm:px-20">
                     <h3 class="text-white font-mp-bold text-2xl mb-4 pl-14">CONTÁCTENOS:</h3>
                     <ul>
                         @for (item of contactUs; track $index) {
                             <li class="mb-3">
-                                <a class="flex items-start gap-3" [href]="item.link" >
+                                <a class="flex items-start gap-3" [href]="item.link" target="_blank">
                                     <img [src]="item.icon" alt="">
                                     <div>
                                         <h4 class="text-white font-mp-bold text-xl">{{item.title}}</h4>
@@ -30,9 +30,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row items-start justify-center w-4/5 m-auto pb-10 gap-5">
+            <div class="flex flex-col lg:flex-row items-start justify-center w-4/5 m-auto pb-10 gap-5">
                 @for (item of links; track $index) {
-                    <div class="w-full md:w-2/6">
+                    <div class="w-full lg:w-2/6">
                         <h3 class="text-white font-mp-bold text-2xl mb-4">{{item.title}}</h3>
                         <ul>
                             @for (item of item.items; track $index) {

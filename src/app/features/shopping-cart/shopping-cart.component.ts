@@ -39,7 +39,7 @@ export class ShoppingCartComponent {
   }
 
   getCartproduct(){
-    this.userService.getCartData(sessionStorage.getItem("userId")).subscribe({
+    this.userService.getCartData(sessionStorage.getItem("userId"), 22).subscribe({
       next: (response: any) => {
         this.listProducts = response
       },

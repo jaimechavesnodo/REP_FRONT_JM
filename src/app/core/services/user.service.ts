@@ -28,8 +28,8 @@ export class UserService {
     return this.http.post(`https://jmbackend.azurewebsites.net/Shopping/saveProductsCart`, data);
   }
 
-  getCartData(iduser:any){
-    return this.http.get(`https://jmbackend.azurewebsites.net/Shopping/getCartData/${iduser}`);
+  getCartData(iduser:any, idproduct:any){
+    return this.http.get(`https://jmbackend.azurewebsites.net/Shopping/getCartData/${iduser}/${idproduct}`);
   }
 
   deleteProduct(iduser:any, idproduct:any){

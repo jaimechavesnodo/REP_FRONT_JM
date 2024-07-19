@@ -48,7 +48,7 @@ export class FooterComponent {
       icon: "assets/icons/ubicación.png",
       title: "Dirección:",
       text: "Calle 98 #21-50 Ofcina 901 Bogotá D.C",
-      link: ""
+      link: "https://www.google.com/maps/place/Cl.+98+%2321-50+of+901,+Bogotá/@4.6857028,-74.0552796,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9aea999c0001:0x7a4937508e09b04f!8m2!3d4.6857028!4d-74.0552796!16s%2Fg%2F11ssjwxdcs?entry=tts&g_ep=EgoyMDI0MDUyMi4wKgBIAVAD"
     },
   ]
 

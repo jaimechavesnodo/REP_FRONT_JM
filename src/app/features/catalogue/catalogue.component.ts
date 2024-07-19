@@ -176,7 +176,7 @@ export class CatalogueComponent {
           idProduct: 22,
           imageUrl: "assets/images/matumbe.png",
           description: "A ponernos en movimiento. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos, en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio y la ubicación espacial y tener un espacio divertido y de recarga. Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí.",
-          desc: "<p>A ponernos en movimiento. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos, en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio y la ubicación espacial y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a <span>la línea de WA de Matumbé (+57 3164713110)</span> y aplican los TYC definidos por el studio fitness, disponibles aquí.</p>",
+          desc: "<p>A ponernos en movimiento. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos, en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio y la ubicación espacial y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a <span>la línea de WA de Matumbé (+57 3164713110)</span> y aplican los TYC definidos por el studio fitness, disponibles <a href='https://drive.google.com/file/d/1ViFFfxFORSAap7FStA4D2Ojgv1s3Cea-/view?usp=share_link' target='_blank'>aquí</a></p>",
           pointsProduct: "45"
         }
       ]
@@ -190,7 +190,7 @@ export class CatalogueComponent {
           idProduct: 23,
           imageUrl: "assets/images/matumbe.png",
           description: "Un espacio creado para tu bienestar. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio, la ubicación espacial, y tener un espacio divertido y de recarga. Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí.",
-          desc: "<p>Un espacio creado para tu bienestar. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio, la ubicación espacial, y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a la línea de WA de Matumbé (+57 3164713110) y aplican los TYC definidos por el studio fitness, disponibles aquí. </p>",
+          desc: "<p>Un espacio creado para tu bienestar. Clase de baile en Matumbé Fitness Dance Studio de 50 minutos en la cual será posible tonificar el cuerpo, fortalecer el sistema cardiovascular, mejorar el equilibrio, la ubicación espacial, y tener un espacio divertido y de recarga.<br>Clase válida para una persona, la disponibilidad de los horarios en cada sede debe ser consultado a <span>la línea de WA de Matumbé (+57 3164713110)</span> y aplican los TYC definidos por el studio fitness, disponibles <a href='https://drive.google.com/file/d/1ViFFfxFORSAap7FStA4D2Ojgv1s3Cea-/view?usp=share_link' target='_blank'>aquí</a> </p>",
           pointsProduct: "130"
         }
       ]
@@ -384,12 +384,6 @@ export class CatalogueComponent {
           pointsProduct:"200"
         },
         {
-          idProduct: 44,
-          imageUrl: "assets/images/aviatur.png",
-          description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
-          pointsProduct:"3000"
-        },
-        {
           idProduct: 45,
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
@@ -400,6 +394,12 @@ export class CatalogueComponent {
           imageUrl: "assets/images/aviatur.png",
           description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
           pointsProduct:"1000"
+        },
+        {
+          idProduct: 44,
+          imageUrl: "assets/images/aviatur.png",
+          description: "Es hora de viajar y disfrutar. Bono disponible para adquirir tiquetes, hoteles, autos, paquetes turísticos, cruceros y mucho más a través de Aviatur. Ten en cuenta el valor del bono que deseas redimir. Aplican TYC presentados por Aviatur, disponibles en: https://www.aviatur.com/contenidos/condiciones-bono-regalo-aviatur",
+          pointsProduct:"3000"
         }
       ]
     }
@@ -407,15 +407,19 @@ export class CatalogueComponent {
 
   addCar(element:any){
 
-    const data = {
+    const data ={
       idProduct: element.idProduct,
-      imageUrl: element.imageUrl,
-      description: element.description,
-      pointsProduct: element.pointsProduct,
-      redeemedAmount: 1,
-      total: element.pointsProduct,
-      idUser: sessionStorage.getItem("userId")
-    }
+      idUser: sessionStorage.getItem("userId"),
+      dto: {
+          idProduct: element.idProduct,
+          imageUrl: element.imageUrl,
+          description: element.description,
+          pointsProduct: element.pointsProduct,
+          redeemedAmount: 1,
+          total: element.pointsProduct,
+          idUser: sessionStorage.getItem("userId")
+      }
+  }
 
     this.userService.saveProductsCart(data).subscribe({
       next: (response) => {
