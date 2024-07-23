@@ -32,7 +32,7 @@
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" routerLink="/mis-puntos">Mis puntos</a></li>
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" (click)="logOut()">Cerrar sesión</p></li>
                             } @else {
-                                <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" routerLink="/registro">Regístrate</a></li>
+                                <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" routerLink="/registro">Activa tu usuario</a></li>
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><p class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" (click)="showModal()">Ingresa a tu cuenta</p></li>
                             }
                         </ul>
@@ -93,7 +93,7 @@
             <div class="">
                 <form [formGroup]="formEmail">
                     <label class="jm-label">Correo electrónico corporativo</label>
-                    <input formControlName="email" class="jm-input" type="text" placeholder="Escribe email secundario" />
+                    <input formControlName="email" class="jm-input" type="text" placeholder="Escribe email" />
                     @if (emailField.touched && emailField.hasError('required')) {
                         <p class="jm-error body-3 font-regular text-left">
                             Campo obligatorio

@@ -28,8 +28,8 @@ export class UserService {
     return this.http.post(`https://jmbackend.azurewebsites.net/Shopping/saveProductsCart`, data);
   }
 
-  getCartData(iduser:any, idproduct:any){
-    return this.http.get(`https://jmbackend.azurewebsites.net/Shopping/getCartData/${iduser}/${idproduct}`);
+  getCartData(iduser:any){
+    return this.http.get(`https://jmbackend.azurewebsites.net/Shopping/getCartData/${iduser}`);
   }
 
   deleteProduct(iduser:any, idproduct:any){
@@ -42,6 +42,14 @@ export class UserService {
 
   getPointClient(iduser:any){
     return this.http.get(`https://jmbackend.azurewebsites.net/PointClient/getPointClient/${iduser}`);
+  }
+
+  getTotalSummary(iduser:any){
+    return this.http.get(`https://jmbackend.azurewebsites.net/Shopping/totalSummary/${iduser}`);
+  }
+
+  getRedemptionsCustomer(iduser:any, name:any, date:any, page:any, limit:any){
+    return this.http.get(`https://jmbackend.azurewebsites.net/Redemptions/getRedemptionsCustomer/${iduser}?orderName=${name}&redemptionDate=${date}&page=${page}&limit=${limit}`);
   }
 
 }

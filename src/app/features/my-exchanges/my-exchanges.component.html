@@ -5,73 +5,43 @@
                 <h2 class="font-mp-bold text-center lg:text-left text-3xl lg:text-5xl">Mis canjes <img src="" alt=""></h2>
             </div>
             <div class="w-full py-10 flex flex-col lg:flex-row justify-end items-end">
-                <h4 class="font-mp-bold text-2xl lg:border-r-2 border-black lg:pr-5 text-center lg:text-left">Mi saldo actual <strong class="text-5xl">15.871</strong> puntos</h4>
+                <h4 class="font-mp-bold text-2xl lg:border-r-2 border-black lg:pr-5 text-center lg:text-left">Mi saldo actual <strong class="text-5xl">{{myPoints}}</strong> puntos</h4>
                 <p class="w-full lg:w-auto font-mp-light text-2xl text-center lg:text-left lg:pl-5">MIEMBRO DE PRIVILEGIOS JMTRV</p>
             </div>
         </div>
-        <div class="flex gap-7 mb-10 flex-col lg:flex-row">
-            <div class="w-full">
-                <input formControlName="name" class="jm-input" type="text" placeholder="Escribe tu nombre" />
-            </div>
-            <div class="w-full">
-                <input formControlName="lastName" class="jm-input" type="text" placeholder="Escribe tu apellido" />
-            </div>
-            <div class="w-full">
-                <input formControlName="lastName" class="jm-input" type="text" placeholder="Escribe tu apellido" />
-            </div>
+        <div class="">
+            <form [formGroup]="formfilter">
+                <div class="w-full lg:w-3/4 m-auto flex gap-7 mb-10 flex-col lg:flex-row">
+                    <div class="w-full">
+                        <input formControlName="date" class="jm-input" type="date" placeholder="Fecha" />
+                    </div>
+                    <div class="w-full">
+                        <input formControlName="name" class="jm-input" type="text" placeholder="Buscar por orden redimida" />
+                    </div>
+                </div>
+                <div class="w-full flex justify-center items-center gap-4">
+                    <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="searsh()">buscar</button>
+                    <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="clear()">limpiar</button>
+                </div>
+            </form>
         </div>
         <div class="p-5 mb-5 shadow-2xl">
-            <article class="mb-10">
-                <div class="flex flex-col lg:flex-row justify-between pb-2 mb-3 border-b-2 border-red">
-                    <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                    <h3 class="font-mp-bold text-2xl">Fecha del canje: 30/09/2024</h3>
-                </div>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO 1213213213</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el 1 de junio</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: sfdsdf sdfsdf</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: 35698</p>
-            </article>
-            <article class="mb-10">
-                <div class="flex justify-between pb-2 mb-3 border-b-2 border-red flex-col lg:flex-row">
-                    <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                    <h3 class="font-mp-bold text-2xl">Fecha del canje: 30/09/2024</h3>
-                </div>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO 1213213213</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el 1 de junio</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: sfdsdf sdfsdf</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: 35698</p>
-            </article>
-            <article class="mb-10">
-                <div class="flex justify-between pb-2 mb-3 border-b-2 border-red flex-col lg:flex-row">
-                    <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                    <h3 class="font-mp-bold text-2xl">Fecha del canje: 30/09/2024</h3>
-                </div>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO 1213213213</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el 1 de junio</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: sfdsdf sdfsdf</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: 35698</p>
-            </article>
-            <article class="mb-10">
-                <div class="flex justify-between pb-2 mb-3 border-b-2 border-red flex-col lg:flex-row">
-                    <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                    <h3 class="font-mp-bold text-2xl">Fecha del canje: 30/09/2024</h3>
-                </div>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO 1213213213</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el 1 de junio</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: sfdsdf sdfsdf</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: 35698</p>
-            </article>
-            <article class="mb-10">
-                <div class="flex justify-between pb-2 mb-3 border-b-2 border-red flex-col lg:flex-row">
-                    <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                    <h3 class="font-mp-bold text-2xl">Fecha del canje: 30/09/2024</h3>
-                </div>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO 1213213213</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el 1 de junio</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: sfdsdf sdfsdf</p>
-                <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: 35698</p>
-            </article>
-
+            @for (item of listChanges; track $index) {
+                <article class="mb-10">
+                    <div class="flex flex-col lg:flex-row justify-between pb-2 mb-3 border-b-2 border-red">
+                        <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
+                        <h3 class="font-mp-bold text-2xl">Fecha del canje: {{item.redemptionDate | date}}</h3>
+                    </div>
+                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO {{item.id}}</p>
+                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el {{item.redemptionDate | date:'medium'}}</p>
+                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: {{item.orderName}}</p>
+                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: {{item.pointsProduct}}</p>
+                </article>
+            }
+        </div>
+        <div class="w-full flex justify-between items-center gap-4">
+            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="prev()">aanterior</button>
+            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="next()">siguiente</button>
         </div>
     </div>
 </section>

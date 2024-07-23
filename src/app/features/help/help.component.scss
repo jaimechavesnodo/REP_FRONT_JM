@@ -1,4 +1,16 @@
 @import 'style.scss';
 
 .acordeon-item {
+    
+}
+
+:host ::ng-deep {
+    .acordeon-item p span,
+    .acordeon-item p a {
+        color:#f50002;
+    }
+
+    .acordeon-item p a:hover {
+        text-decoration: underline;
+    }
 }

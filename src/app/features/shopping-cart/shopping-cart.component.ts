@@ -1,23 +1,30 @@
 import { Component, inject } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-cart',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './shopping-cart.component.html',
   styleUrl: './shopping-cart.component.scss'
 })
 export class ShoppingCartComponent {
 
   private userService = inject(UserService)
+  private router = inject(Router)
   listProducts:any = [];
   isMovile: boolean = false;
   errorPoints: boolean = false;
   date:Date = new Date ;
   myPoints: Number | undefined;
+  totalPoints: Number | undefined;
   
   ngOnInit() {
+
+    window.scrollTo({top: 0, behavior: 'smooth'})
 
     if (window.innerWidth < 768) {
       this.isMovile = true;
@@ -35,11 +42,23 @@ export class ShoppingCartComponent {
       }
     })
 
+    this.userService. getTotalSummary(sessionStorage.getItem("userId")).subscribe({
+      next: (response: any) => {
+        if (response) {
+          this.totalPoints = response.totalSuma
+        } else {
+          this.myPoints = 0;
+        }
+      },
+      error: (error) => {
+      }
+    })
+
     this.getCartproduct()
   }
 
   getCartproduct(){
-    this.userService.getCartData(sessionStorage.getItem("userId"), 22).subscribe({
+    this.userService.getCartData(sessionStorage.getItem("userId")).subscribe({
       next: (response: any) => {
         this.listProducts = response
       },
@@ -49,7 +68,9 @@ export class ShoppingCartComponent {
   }
 
   deleteItem(item: any) {
-    this.userService.deleteProduct(sessionStorage.getItem("userId"), item.idProduct).subscribe({
+    console.log(item);
+    
+    this.userService.deleteProduct(sessionStorage.getItem("userId"), item).subscribe({
       next: (response: any) => {
         this.getCartproduct()
         this.errorPoints = false;
@@ -71,12 +92,16 @@ export class ShoppingCartComponent {
           idUser: item.idUser
         }
       )
+
+      this.deleteItem(item.idProduct)
     }
     this.userService.CreateRedeemtion(data).subscribe({
       next: (response: any) => {
+        console.log(response)
+        this.router.navigate(["/mis-canjes"]);
       },
       error: (error) => {
-        this.errorPoints = true;
+        console.log(error)
       }
     })
   }

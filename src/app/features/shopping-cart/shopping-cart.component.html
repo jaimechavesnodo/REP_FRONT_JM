@@ -33,7 +33,7 @@
                                 <p>Total:</p>
                                 <p class="font-mp-bold">{{item.total}}</p>
                             </div>
-                            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item)">Eliminar</button>
+                            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item.idProduct)">Eliminar</button>
                         </div>
                     }
                 </div>
@@ -64,7 +64,7 @@
                                 <p class="font-mp-bold text-2xl text-center "><strong class="text-5xl">{{item.total}}</strong> Puntos</p>
                             </td>
                             <td class="w-2/12 p-3 bg-gray-primary border-r border-white">
-                                <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item)">Eliminar</button>
+                                <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="deleteItem(item.idProduct)">Eliminar</button>
                             </td>
                         </tr>
                     }
@@ -82,8 +82,8 @@
                     <p class="font-mp-light text-3xl lg:text-4xl text-red">Total:</p>
                 </div>
                 <div class="w-1/2 lg:w-1/4 text-right">
-                    <p class="font-mp-light text-3xl lg:text-4xl mb-5">7.172 Puntos</p>
-                    <p class="font-mp-light text-3xl lg:text-4xl text-red">7.172 Puntos</p>
+                    <p class="font-mp-light text-3xl lg:text-4xl mb-5">{{totalPoints}} Puntos</p>
+                    <p class="font-mp-light text-3xl lg:text-4xl text-red">{{totalPoints}} Puntos</p>
                 </div>
             </div>
             @if (errorPoints) {
@@ -92,12 +92,12 @@
             <div class="flex items-end mb-10">
                 <div class="w-1/2 text-left">
                     <div class="text-left">
-                        <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform">Cancelar</button>
+                        <a class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" routerLink="/catalogo">Cancelar</a>
                     </div>
                 </div>
                 <div class="w-1/2 text-right">
                     <div class="text-right">
-                        <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="CreateRedeemtion()">REDIMIR</button>
+                        <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="CreateRedeemtion()">Redimir</button>
                     </div>
                 </div>
             </div>
