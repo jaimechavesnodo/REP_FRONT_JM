@@ -21,6 +21,7 @@ export class ShoppingCartComponent {
   date:Date = new Date ;
   myPoints: Number | undefined;
   totalPoints: Number | undefined;
+  totalbonos: Number | undefined;
   
   ngOnInit() {
 
@@ -46,6 +47,7 @@ export class ShoppingCartComponent {
       next: (response: any) => {
         if (response) {
           this.totalPoints = response.totalSuma
+          this.totalbonos = response.totalRegistros
         } else {
           this.myPoints = 0;
         }
