@@ -30,18 +30,18 @@
                 <article class="mb-10">
                     <div class="flex flex-col lg:flex-row justify-between pb-2 mb-3 border-b-2 border-red">
                         <h3 class="font-mp-bold text-2xl">Canje redimido</h3>
-                        <h3 class="font-mp-bold text-2xl">Fecha del canje: {{item.redemptionDate | date}}</h3>
+                        <h3 class="font-mp-bold text-2xl">Fecha del canje: {{item.redemptionDate | date }}</h3>
                     </div>
                     <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Compra NO {{item.id}}</p>
-                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el {{item.redemptionDate | date:'medium'}}</p>
+                    <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Redimido el {{item.redemptionDate | date }}</p>
                     <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Orden redimida: {{item.orderName}}</p>
                     <p class="font-mp-regular mb-2 text-gray-secondary text-xl">Puntos: {{item.pointsProduct}}</p>
                 </article>
             }
         </div>
         <div class="w-full flex justify-between items-center gap-4">
-            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="prev()">aanterior</button>
-            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="next()">siguiente</button>
+            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="prev()">Anterior</button>
+            <button class="bg-fondo-boton pl-16 pr-24 pt-3 pb-8 font-mp-regular text-white text-2xl mt-4 bg-no-repeat bg-contain scale-100 hover:scale-105 transition-transform" (click)="next()">Siguiente</button>
         </div>
     </div>
 </section>
