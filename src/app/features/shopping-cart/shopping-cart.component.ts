@@ -91,7 +91,8 @@ export class ShoppingCartComponent {
           orderName: item.description,
           redemptionDate: this.date.toLocaleDateString(),
           pointsProduct: item.total,
-          idUser: item.idUser
+          idUser: item.idUser,
+          redeemedAmount: item.redeemedAmount
         }
       )
 

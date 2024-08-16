@@ -1,7 +1,7 @@
 <header class="bg-black w-full relative before:absolute before:top-0 before:right-0 before:h-full before:bg-red before:w-2/12 lg:before:w-4/12">
     <div class="container mx-auto flex items-center justify-center">
         <div class="w-5/12 sm:w-3/12 relative">
-            <a routerLink="/">
+            <a href="https://www.jmtrv.com.co/">
                 <img class="py-1 w-60 sm:max-h-28" src="assets/images/Logo-JMTRV.png" alt="JMTRV">
             </a>
         </div>
@@ -16,12 +16,12 @@
                             @if (sessionService.token) {
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" routerLink="/catalogo">Catálogo</a></li>
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" routerLink="/ayuda">Ayuda</a></li>
-                                <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" href="https://www.jmtrv.com.co/">Volver a JMTRV</a></li>
                             } @else {
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" href="https://www.jmtrv.com.co/?page_id=1190" target="_blank">Consulta tu póliza</a></li>
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" href="https://gol.jmtrv.com.co/Home/Login" target="_blank">Paga tu póliza</a></li>
                                 <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" href="https://gol.jmtrv.com.co/Home/Login" target="_blank">Accede al portal</a></li>
                             }
+                            <li class="last:border-none lg:border-r border-b lg:border-b-0 border-white w-full lg:w-auto text-center"><a class="text-white font-mp-regular block text-xl px-4 py-3 lg:py-1 hover:underline cursor-pointer" href="https://www.jmtrv.com.co/">Volver a JMTRV</a></li>
                         </ul>
                     </nav>
                 </div>
