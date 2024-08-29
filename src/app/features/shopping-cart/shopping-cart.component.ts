@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
 import { Router, RouterLink } from '@angular/router';
+import { format } from "date-fns";
 
 @Component({
   selector: 'app-shopping-cart',
@@ -89,7 +90,7 @@ export class ShoppingCartComponent {
       data.push(
         {
           orderName: item.description,
-          redemptionDate: this.date.toLocaleDateString(),
+          redemptionDate: format(this.date, "yyyy-MM-dd"),
           pointsProduct: item.total,
           idUser: item.idUser,
           redeemedAmount: item.redeemedAmount
