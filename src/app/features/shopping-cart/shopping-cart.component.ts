@@ -93,10 +93,11 @@ export class ShoppingCartComponent {
           redemptionDate: format(this.date, "yyyy-MM-dd"),
           pointsProduct: item.total,
           idUser: item.idUser,
-          redeemedAmount: item.redeemedAmount
+          redeemedAmount: item.redeemedAmount,
+          previousPointHistory: this.myPoints
         }
       )
-
+      this.myPoints = Number(this.myPoints) - item.total
       this.deleteItem(item.idProduct)
     }
     this.userService.CreateRedeemtion(data).subscribe({
