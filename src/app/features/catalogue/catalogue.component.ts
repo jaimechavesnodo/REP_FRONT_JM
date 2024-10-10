@@ -189,7 +189,7 @@ export class CatalogueComponent {
     {
       title: "Grupo Takami",
       image: "assets/images/Takami.jpg",
-      text: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
+      text: "<p> Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redención y sólo puede ser entregado a las personas que se encuentren dentro de la zona de cobertura del grupo, o que pueda acercarse a alguno de sus puntos físicos a reclamarlo. Aplican TYC definidos por el Grupo Takami, disponibles en https://takami.co/terminos-y-condiciones</a></p>",
       active: false,
       listV: [
         {
@@ -198,7 +198,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/Takami.jpg",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "50"
+          pointsProduct: "57,5"
         },
         {
           title: "Bono de regalo Takami",
@@ -206,7 +206,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/Takami.jpg",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "100"
+          pointsProduct: "107,5"
         },
         {
           title: "Bono de regalo Takami",
@@ -214,7 +214,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/Takami.jpg",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "150"
+          pointsProduct: "157,5"
         },
         {
           title: "Bono de regalo Takami",
@@ -222,7 +222,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/Takami.jpg",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "200"
+          pointsProduct: "207,5"
         },
         {
           title: "Bono de regalo Takami",
@@ -230,7 +230,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/Takami.jpg",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "250"
+          pointsProduct: "257,5"
         },
         {
           title: "Bono de regalo Takami",
@@ -238,7 +238,7 @@ export class CatalogueComponent {
           imageUrl: "assets/images/seratta.png",
           description: "Bono de regalo Takami",
           desc: "<p>Una increíble experiencia para compartir. Con este bono, podrás disfrutar de una aventura gastronómica en un restaurante del Grupo Takami de tu elección. El bono tiene una validez de un año después de la fecha de redencion. Aplican TYC definidos por el Grupo Takami, disponibles en <a href='https://takami.co/terminos-y-condiciones' target = '_blank' > https://takami.co/terminos-y-condiciones</a></p>",
-          pointsProduct: "300"
+          pointsProduct: "307,5"
         },
       ]
     }
