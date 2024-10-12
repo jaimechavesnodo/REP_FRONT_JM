@@ -60,6 +60,98 @@
         }
     </div>
 
+
+
+
+
+
+
+
+
+    <article class="degradado">
+        <div class="container m-auto">
+            <div class="flex items-end">
+                <h4 class="text-white font-mp-bold text-3xl sm:text-4xl lg:text-8xl w-3/5 py-4">CREPES & WAFFLES</h4>
+                <img class="w-2/5" src="assets/images/Crepes & Waffles.jpg" alt="">
+            </div>
+        </div>
+    </article>
+    <div class="container m-auto my-7 accordeon-catalogo py-6">
+        @for (item of listCrepes; track $index) {
+            <div class="acordeon-item" [class]="item.active ? 'activo' : ''">
+                <h4 (click)="activeItemCrepes($index)" class="flex font-mp-regular text-3xl cursor-pointer mb-5">
+                    <img class="w-11 mr-4 h-11" [src]="item.active ? 'assets/images/menos.png' : 'assets/images/mas.png'" >{{item.title}}</h4>
+                <div [class]="item.active ? 'block' : 'hidden'" class="mb-7 mx-5 flex items-center gap-6 flex-col lg:flex-row">
+                    <p class="font-mp-regular text-2xl" [innerHTML]= "item.text"></p>
+                </div>
+                @for (element of item.listV; track $index) {
+                    <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
+                        <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative lg:absolute lg:bottom-6 lg:right-0 font-mp-light text-3xl gap-3 m-auto lg:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <article class="degradado">
+        <div class="container m-auto">
+            <div class="flex items-end">
+                <h4 class="text-white font-mp-bold text-3xl sm:text-4xl lg:text-8xl w-3/5 py-4">GRUPO TAKAMI</h4>
+                <img class="w-2/5" src="assets/images/takami.jpeg" alt="">
+            </div>
+        </div>
+    </article>
+    <div class="container m-auto my-7 accordeon-catalogo py-6">
+        @for (item of listTakami; track $index) {
+            <div class="acordeon-item" [class]="item.active ? 'activo' : ''">
+                <h4 (click)="activeItemTakami($index)" class="flex font-mp-regular text-3xl cursor-pointer mb-5">
+                    <img class="w-11 mr-4 h-11" [src]="item.active ? 'assets/images/menos.png' : 'assets/images/mas.png'" >{{item.title}}</h4>
+                <div [class]="item.active ? 'block' : 'hidden'" class="mb-7 mx-5 flex items-center gap-6 flex-col lg:flex-row">
+                    <p class="font-mp-regular text-2xl" [innerHTML]= "item.text"></p>
+                </div>
+                @for (element of item.listV; track $index) {
+                    <div [class]="item.active ? 'block' : 'hidden'" class="relative py-6  mb-6 border-t-2 border-red mx-5">
+                        <p class="font-mp-regular text-2xl mb-7" [innerHTML]= "element.desc"></p>
+                        <h3 class="text-center text-black font-mp-bold text-2xl"><strong class="text-5xl text-red">{{element.pointsProduct}}</strong> Puntos</h3>
+                        <button (click)="addCar(element)" class="flex relative lg:absolute lg:bottom-6 lg:right-0 font-mp-light text-3xl gap-3 m-auto lg:m-0 mt-5 items-center">Agregar al carrito  <img src="assets/images/car-black.png" alt=""></button>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="text-center">
         <div class="flex lg:inline-flex flex-col lg:flex-row gap-5 m-auto w-auto border-b-2 border-red mb-8 pb-3 text-center lg:text-left">
             <img class="w-28 m-auto h-auto" src="assets/images/gastronomia.png" alt="">

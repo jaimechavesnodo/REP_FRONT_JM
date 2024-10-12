@@ -154,6 +154,45 @@ export class CatalogueComponent {
         }
       ]
     },
+    // {
+    //   title: "EVENTOS MENSUALES SERATTA",
+    //   image: "assets/images/evento-seratta.png",
+    //   text: "<p>Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias. Entra <a href='https://www.serattagroup.com/eventos' target='_blank'>aquí</a> para conocer los eventos del mes.</p>",
+    //   active: false,
+    //   listV: [
+    //     // {
+    //     //   title:"Eventos mensuales seratta",
+    //     //   idProduct: 19,
+    //     //   imageUrl: "assets/images/evento-seratta.png",
+    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
+    //     //   pointsProduct:"60"
+    //     // },
+    //     // {
+    //     //   title:"Eventos mensuales seratta",
+    //     //   idProduct: 20,
+    //     //   imageUrl: "assets/images/evento-seratta.png",
+    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
+    //     //   pointsProduct:"159"
+    //     // },
+    //     // {
+    //     //   title:"Eventos mensuales seratta",
+    //     //   idProduct: 21,
+    //     //   imageUrl: "assets/images/evento-seratta.png",
+    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
+    //     //   pointsProduct:"130"
+    //     // },
+    //     {
+    //       title:"Eventos mensuales seratta",
+    //       idProduct: 21,
+    //       imageUrl: "assets/images/evento-seratta.png",
+    //       description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias. Entra aquí para conocer los eventos del mes.",
+    //       pointsProduct:"197"
+    //     } 
+    //   ]
+    // },
+  ]
+
+  listCrepes = [
     {
       title: "Crepes & Waffles",
       image: "assets/images/Crepes & Waffles.jpg",
@@ -186,6 +225,9 @@ export class CatalogueComponent {
         },
       ]
     },
+  ]
+
+  listTakami = [
     {
       title: "Grupo Takami",
       image: "assets/images/Takami.jpg",
@@ -242,42 +284,6 @@ export class CatalogueComponent {
         },
       ]
     }
-    // {
-    //   title: "EVENTOS MENSUALES SERATTA",
-    //   image: "assets/images/evento-seratta.png",
-    //   text: "<p>Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias. Entra <a href='https://www.serattagroup.com/eventos' target='_blank'>aquí</a> para conocer los eventos del mes.</p>",
-    //   active: false,
-    //   listV: [
-    //     // {
-    //     //   title:"Eventos mensuales seratta",
-    //     //   idProduct: 19,
-    //     //   imageUrl: "assets/images/evento-seratta.png",
-    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-    //     //   pointsProduct:"60"
-    //     // },
-    //     // {
-    //     //   title:"Eventos mensuales seratta",
-    //     //   idProduct: 20,
-    //     //   imageUrl: "assets/images/evento-seratta.png",
-    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-    //     //   pointsProduct:"159"
-    //     // },
-    //     // {
-    //     //   title:"Eventos mensuales seratta",
-    //     //   idProduct: 21,
-    //     //   imageUrl: "assets/images/evento-seratta.png",
-    //     //   description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias.",
-    //     //   pointsProduct:"130"
-    //     // },
-    //     {
-    //       title:"Eventos mensuales seratta",
-    //       idProduct: 21,
-    //       imageUrl: "assets/images/evento-seratta.png",
-    //       description: "Eventos exclusivos, donde el diseño cautivador se fusiona con platos creativos elaborados con los más finos ingredientes. Déjate sorprender por experiencias personalizadas y una oferta gastronómica a la vanguardia de las tendencias. Entra aquí para conocer los eventos del mes.",
-    //       pointsProduct:"197"
-    //     } 
-    //   ]
-    // },
   ]
 
   listMatumbe = [
@@ -572,6 +578,14 @@ export class CatalogueComponent {
 
   activeItemSerata(id: any) {
     this.listSerata[id].active = !this.listSerata[id].active
+  }
+
+  activeItemCrepes(id: any) {
+    this.listCrepes[id].active = !this.listCrepes[id].active
+  }
+
+  activeItemTakami(id: any) {
+    this.listTakami[id].active = !this.listTakami[id].active
   }
 
   activeItemMatumbe(id: any) {
